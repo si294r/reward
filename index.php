@@ -55,7 +55,7 @@ $service = isset($params[0]) ? $params[0] : "";
 
 // validate service ...
 switch ($service) {
-    case 'checkreward' :
+    case 'check' :
         validate_get();
         break;
 //    case '....' :
