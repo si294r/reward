@@ -29,7 +29,7 @@ if (isset($row['is_redeemed']))
     {
         // reset value and set flag is_redeemed
         $sql2 = "UPDATE reward_almighty_ios "
-                . "SET bolt = 0, karma = 0, is_redeemed = true "
+                . "SET is_redeemed = true "
                 . "WHERE swrve_user_id = :user_id";
         $statement2 = $connection->prepare($sql2);
         $statement2->bindParam(":user_id", $swrve_user_id);
