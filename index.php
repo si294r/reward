@@ -58,10 +58,10 @@ switch ($service) {
     case 'check' :
         validate_get();
         break;
-//    case '....' :
-//        validate_post();
-//        $input = file_get_contents("php://input");
-//        break;
+    case 'setreward' :
+        validate_post();
+        $input = file_get_contents("php://input");
+        break;
     default :
         show_error(503, "503 Service Unavailable", "Invalid Service");
 }
