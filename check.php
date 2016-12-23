@@ -25,7 +25,7 @@ $row = $statement1->fetch(PDO::FETCH_ASSOC);
 
 if (isset($row['is_redeemed'])) 
 {
-    if ($row['is_redeemed'] == FALSE) 
+    if ($row['is_redeemed'] == FALSE || TRUE) // bypass is_redeemed
     {
         // reset value and set flag is_redeemed
         $sql2 = "UPDATE reward_almighty_ios "
